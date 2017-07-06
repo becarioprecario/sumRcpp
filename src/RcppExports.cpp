@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // sumRRcpp
 double sumRRcpp(double x, double y);
-RcppExport SEXP sumR_sumRRcpp(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP sumRcpp_sumRRcpp(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,11 +19,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"sumR_sumRRcpp", (DL_FUNC) &sumR_sumRRcpp, 2},
+    {"sumRcpp_sumRRcpp", (DL_FUNC) &sumRcpp_sumRRcpp, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_sumR(DllInfo *dll) {
+RcppExport void R_init_sumRcpp(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

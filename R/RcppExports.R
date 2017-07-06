@@ -11,6 +11,6 @@
 #'
 #' @export
 sumRRcpp <- function(x, y) {
-    .Call('sumR_sumRRcpp', PACKAGE = 'sumR', x, y)
+    .Call('sumRcpp_sumRRcpp', PACKAGE = 'sumRcpp', x, y)
 }
 

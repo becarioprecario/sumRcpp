@@ -3,4 +3,4 @@
 export(sumR)
 export(sumRRcpp)
 importFrom(Rcpp,sourceCpp)
-useDynLib(sumR)
+useDynLib(sumRcpp)

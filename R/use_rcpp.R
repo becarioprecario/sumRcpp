@@ -1,3 +1,3 @@
-#' @useDynLib sumR
+#' @useDynLib sumRcpp
 #' @importFrom Rcpp sourceCpp
 NULL
